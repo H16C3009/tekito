@@ -39,6 +39,66 @@ Build laravel development environment with docker-compose.
 - Base image
   - [mysql](https://hub.docker.com/_/mysql):8.0
 
+###  docker-compose.ymlがある場所に移動
+
+```
+cd infrastructure
+```
+
+### docker-compose.ymlをビルド
+
 ```
 docker-compose build
 ```
+
+### ビルドしたのをたてる
+
+```
+docker-compose up -d
+```
+
+### docker appコンテナに入る
+
+```
+docker exec -it dockerlaravel_app_1 /bin/bash
+```
+
+### pakageをインストールする
+
+```
+/work/backend# composer install
+```
+
+### vim をインストール
+
+```
+/work/backend#　apt-get update
+/work/backend#　apt-get install vim
+```
+
+### vim .env.sampleでmysqlの設定を変更する
+
+```
+/work/backend# vim .env.example
+
+DB_CONNECTION=mysql
+DB_HOST=db
+DB_PORT=3306
+DB_DATABASE=laravel_local
+DB_USERNAME=phper
+DB_PASSWORD=secret
+```
+
+### .envを作成
+
+```
+/work/backend#　cp .env.example .env
+```
+
+### app keyを作成
+
+```
+/work/backend#　php artisan key:generate
+```
+
+
