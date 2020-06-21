@@ -38,3 +38,6 @@ Build laravel development environment with docker-compose.
 
 - Base image
   - [mysql](https://hub.docker.com/_/mysql):8.0
+
+
+docker-compose build
