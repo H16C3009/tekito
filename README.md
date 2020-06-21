@@ -101,4 +101,14 @@ DB_PASSWORD=secret
 /work/backend#　php artisan key:generate
 ```
 
+### docker toolboxの場合
 
+```
+docker-machine ls
+```
+現在 active の IP を確認する
+URL：192.168.XXX.XXX:80 にアクセスする
+
+### docker toolboxの以外場合
+
+URL：127.0.0:1 にアクセスする
