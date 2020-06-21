@@ -106,8 +106,7 @@ DB_PASSWORD=secret
 ```
 docker-machine ls
 ```
-現在 active の IP を確認する
-URL：192.168.XXX.XXX:80 にアクセスする
+現在 active の IP を確認し、URL：192.168.XXX.XXX:80 にアクセスする
 
 ### docker toolboxの以外場合
 
